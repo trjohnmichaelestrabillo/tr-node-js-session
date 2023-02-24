@@ -1,0 +1,59 @@
+@keyframes animateParentModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animateContentModal {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animated-parent {
+  animation: animateParentModal 0.3s ease-in forwards;
+}
+.animated-parent .animated-child {
+  animation: animateContentModal 0.3s 0.4s ease-in forwards;
+}
+
+.modal-bg {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 10;
+}
+.modal-bg .modal-container {
+  opacity: 0;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  width: 70vw;
+  background: white;
+  border-radius: 3px;
+}
+.modal-bg .modal-container h3 {
+  color: rgb(99, 197, 99);
+}
+.modal-bg .modal-container .btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-bg .modal-container .btn-container .danger {
+  padding: 5px 20px;
+}/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-family: Roboto, Helvetica, Arial;
+}
+
+.danger-btn {
+  background: rgb(216, 44, 44);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+input, select, form button {
+  padding: 5px;
+  color: #494949;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.3s ease-in;
+}
+input:focus, select:focus, form button:focus {
+  border: 1px solid rgb(99, 197, 99);
+}
+
+form button {
+  padding: 5px 20px;
+}
+
+button.success {
+  background: rgb(99, 197, 99);
+}
+
+button.danger {
+  background: rgb(216, 44, 44);
+  margin-left: 5px;
+  color: white;
+  border: none;
+}/*# sourceMappingURL=global.css.map */

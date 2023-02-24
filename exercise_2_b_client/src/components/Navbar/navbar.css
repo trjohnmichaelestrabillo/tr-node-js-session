@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-bottom: 1px solid #ccc;
+}
+nav h1 {
+  color: rgb(99, 197, 99);
+}
+nav h1 .session {
+  color: #353535;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  opacity: 0.4;
+  transition: all 1s ease-in;
+}/*# sourceMappingURL=navbar.css.map */

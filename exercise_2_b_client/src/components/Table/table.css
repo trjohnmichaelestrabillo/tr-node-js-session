@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr th {
+  background: #353535;
+  color: white;
+}
+table thead tr th, table tbody tr td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 5px;
+}
+table tbody tr td {
+  color: #494949;
+}
+table tbody tr:nth-of-type(even) {
+  background: rgb(212, 212, 212);
+}
+table tbody tr {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+table tbody tr:hover {
+  background: rgb(240, 240, 240);
+}
+table tbody tr button {
+  border: none;
+  color: white;
+}/*# sourceMappingURL=table.css.map */

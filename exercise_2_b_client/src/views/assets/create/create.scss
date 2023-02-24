@@ -1,0 +1,57 @@
+@import "../../../assets/variables";
+.form-parent{
+    margin-top:40px;
+    display: fleX;
+    justify-content: center;
+
+    .main-form{
+
+        width:70%;
+        border: 1px solid #ccc;
+        padding: 40px 60px;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        box-shadow: 20px 20px 0 $text-base;
+        h3{
+            padding:0;
+            margin:30px 0 10px 0;
+            border-bottom:3px solid $node;
+            color: $node;
+        }
+
+        .flex-form{
+            display:flex;
+            gap:15px;
+            .form-group{
+                display: flex;
+                flex-flow: column;
+                flex: 1;
+                margin-bottom:10px;
+                label{
+                    font-size: .9rem;
+                    color: $text-base;
+                    font-weight:300;
+                }
+            }
+        }
+
+        .btn-group{
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+
+            button{
+                background: $node;
+                border:none;
+                border-radius: 3px;
+                color: white;
+            }
+        }
+
+
+    }
+
+    
+    
+}

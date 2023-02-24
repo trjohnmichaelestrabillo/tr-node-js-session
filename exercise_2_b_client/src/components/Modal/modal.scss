@@ -1,0 +1,69 @@
+@import "../../assets/variables";
+
+@keyframes animateParentModal{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+}
+
+@keyframes animateContentModal{
+    0%{
+        opacity:0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);   
+    }
+}
+
+.animated-parent{
+    animation: animateParentModal .3s ease-in forwards;
+    .animated-child{
+        animation: animateContentModal .3s .4s ease-in forwards;
+    }
+}
+
+.modal-bg{
+    display:flex;
+    opacity:0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items:center;
+    background: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(2px);
+    z-index:10;
+    
+    .modal-container{
+        opacity:0;
+        padding: 30px 40px;
+        box-sizing: border-box;
+
+        width: 70vw;
+        background:white;
+        border-radius: 3px;
+
+        h3{
+            color: $node;
+        }
+        
+
+        .btn-container{
+            display: flex;
+            justify-content: flex-end;
+
+            .danger{
+                padding: 5px 20px;
+            }
+        }
+
+    }
+}

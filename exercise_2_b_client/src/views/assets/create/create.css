@@ -1,0 +1,45 @@
+.form-parent {
+  margin-top: 40px;
+  display: fleX;
+  justify-content: center;
+}
+.form-parent .main-form {
+  width: 70%;
+  border: 1px solid #ccc;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 #494949;
+}
+.form-parent .main-form h3 {
+  padding: 0;
+  margin: 30px 0 10px 0;
+  border-bottom: 3px solid rgb(99, 197, 99);
+  color: rgb(99, 197, 99);
+}
+.form-parent .main-form .flex-form {
+  display: flex;
+  gap: 15px;
+}
+.form-parent .main-form .flex-form .form-group {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  margin-bottom: 10px;
+}
+.form-parent .main-form .flex-form .form-group label {
+  font-size: 0.9rem;
+  color: #494949;
+  font-weight: 300;
+}
+.form-parent .main-form .btn-group {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+.form-parent .main-form .btn-group button {
+  background: rgb(99, 197, 99);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}/*# sourceMappingURL=create.css.map */

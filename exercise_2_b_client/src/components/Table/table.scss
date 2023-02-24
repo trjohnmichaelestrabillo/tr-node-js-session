@@ -1,0 +1,43 @@
+@import '../../assets/variables';
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    thead tr th{
+        background: $dark;
+        color:white;
+    }
+    thead tr th, tbody tr td{
+        border:1px solid #ccc;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tbody tr td{
+        color: $text-base;
+    }
+
+    tbody tr:nth-of-type(even){
+        background: $row;
+    }
+
+
+    tbody tr{
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover{
+            background: $row-hover;
+        }
+        
+        button{
+            border:none;
+            color:white;
+        }
+
+        
+
+    }
+    
+
+    
+}
